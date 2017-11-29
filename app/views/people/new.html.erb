@@ -1,0 +1,26 @@
+<h1>Add New Person</h1>
+<hr />
+<br />
+<%= form_for @person do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true %>
+  <br />
+  <%= f.label :hair_color %>
+  <%= f.text_field :hair_color, required: true %>
+  <br />
+  <%= f.label :eye_color %>
+  <%= f.text_field :eye_color, required: true %>
+  <br />
+  <%= f.label :gender %>
+  <%= f.text_field :gender, required: true %>
+  <br />
+  <%= f.label :alive %>
+  <%= f.check_box :alive %>
+  <br />
+  <%= f.submit %>
+<% end %>
+<br />
+<hr />
+<br />
+<%= link_to 'View All', people_path %>
+<!-- <%= link_to 'Edit', people_path %> -->

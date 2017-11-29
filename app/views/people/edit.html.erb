@@ -1,0 +1,30 @@
+<h1>
+  Editing: <%= @person.name %>
+</h1>
+<hr />
+
+<div class='forms'>
+<%= form_for @person do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true %>
+  <br />
+  <%= f.label :hair_color %>
+  <%= f.text_field :hair_color, required: true %>
+  <br />
+  <%= f.label :eye_color %>
+  <%= f.text_field :eye_color, required: true %>
+  <br />
+  <%= f.label :gender %>
+  <%= f.text_field :gender, required: true %>
+  <br />
+  <%= f.label :alive %>
+  <%= f.check_box :alive %>
+  <br />
+  <%= f.submit 'Update' %>
+<%end%>
+</div<
+
+<br />
+<hr />
+<br />
+<%= link_to 'View All', people_path %>
